@@ -131,7 +131,7 @@ export class EmailService {
     library: string = '',
     message: string = ''
   ) {
-    const notifyTo = process.env.NOTIFY_EMAIL;
+    const notifyTo = process.env.EMAIL_TO;
 
     // 1. Welcome email → applicant
     const welcomeInfo = await transporter.sendMail({
