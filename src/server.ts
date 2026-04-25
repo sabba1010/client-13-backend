@@ -19,6 +19,12 @@ app.get('/', (req, res) => {
 // API Routes
 app.use('/api/email', emailRoutes);
 
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+// Export the app for serverless deployment
+export default app;
+
+// Only start the server if not running on Vercel
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+  });
+}
