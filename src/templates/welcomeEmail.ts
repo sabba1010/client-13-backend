@@ -85,9 +85,8 @@ export const welcomeEmailTemplate = (name: string) => `
     <div class="footer">
       <p>&copy; ${new Date().getFullYear()} Oh Curio! All rights reserved.</p>
       <div class="social-links">
-        <a href="#" class="social-link">Twitter</a>
-        <a href="#" class="social-link">Instagram</a>
-        <a href="#" class="social-link">LinkedIn</a>
+        <a href="https://instagram.com/OhCurioApp" class="social-link">Instagram</a>
+        <a href="https://linkedin.com/in/ty-howard" class="social-link">LinkedIn</a>
       </div>
     </div>
   </div>
