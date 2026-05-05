@@ -76,7 +76,7 @@ export const welcomeEmailTemplate = (name: string) => `
         Thank you for applying to the Oh Curio! pilot program. We've received your application and will be in touch personally within a few days to schedule your onboarding conversation.
       </p>
       <p class="text">
-        In the meantime feel free to explore the site at <a href="https://ohcurioapp.com" style="color: #6366f1; text-decoration: none;">ohcurioapp.com</a>.
+        In the meantime feel free to explore the site at <a href="https://www.ohcurioapp.com" style="color: #6366f1; text-decoration: none;">www.ohcurioapp.com</a>.
       </p>
       <p class="text" style="margin-top: 32px; color: #64748b;">
         - Ty Howard, Founder, Oh Curio!
