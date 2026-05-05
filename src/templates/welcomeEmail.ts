@@ -78,6 +78,9 @@ export const welcomeEmailTemplate = (name: string) => `
       <p class="text">
         In the meantime feel free to explore the site at <a href="https://www.ohcurioapp.com" style="color: #6366f1; text-decoration: none;">www.ohcurioapp.com</a>.
       </p>
+      <div style="text-align: center; margin: 32px 0;">
+        <a href="https://www.ohcurioapp.com" style="display: inline-block; padding: 14px 28px; background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px; box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.2), 0 2px 4px -1px rgba(99, 102, 241, 0.1);">Get Started</a>
+      </div>
       <p class="text" style="margin-top: 32px; color: #64748b;">
         - Ty Howard, Founder, Oh Curio!
       </p>
