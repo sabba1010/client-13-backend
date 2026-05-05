@@ -48,21 +48,6 @@ export const welcomeEmailTemplate = (name: string) => `
       font-size: 16px;
       margin-bottom: 24px;
     }
-    .button-container {
-      margin-top: 32px;
-      text-align: center;
-    }
-    .button {
-      display: inline-block;
-      padding: 14px 32px;
-      background-color: #6366f1;
-      color: #ffffff !important;
-      text-decoration: none;
-      border-radius: 12px;
-      font-weight: 600;
-      font-size: 16px;
-      transition: background-color 0.2s;
-    }
     .footer {
       padding: 24px;
       text-align: center;
@@ -86,16 +71,16 @@ export const welcomeEmailTemplate = (name: string) => `
       <div class="logo">Oh Curio!</div>
     </div>
     <div class="content">
-      <div class="greeting">Hi ${name}, welcome aboard!</div>
+      <div class="greeting">Hi ${name},</div>
       <p class="text">
-        We're thrilled to have you join the <strong>Oh Curio!</strong> pilot program. You're now part of an exclusive group exploring the future of personalized discovery.
+        Thank you for applying to the Oh Curio! pilot program. We've received your application and will be in touch personally within a few days to schedule your onboarding conversation.
       </p>
       <p class="text">
-        Get ready to dive into a world of curated experiences tailored just for you. We can't wait to see what you discover.
+        In the meantime feel free to explore the site at <a href="https://ohcurioapp.com" style="color: #6366f1; text-decoration: none;">ohcurioapp.com</a>.
       </p>
-      <div class="button-container">
-        <a href="https://ohcurio.com" class="button">Get Started Now</a>
-      </div>
+      <p class="text" style="margin-top: 32px; color: #64748b;">
+        - Ty Howard, Founder, Oh Curio!
+      </p>
     </div>
     <div class="footer">
       <p>&copy; ${new Date().getFullYear()} Oh Curio! All rights reserved.</p>

@@ -137,7 +137,7 @@ export class EmailService {
     const welcomeInfo = await transporter.sendMail({
       ...mailOptions,
       to,
-      subject: 'Welcome to the Oh Curio! Pilot Program 🎉',
+      subject: "You're on the list - Oh Curio!",
       html: welcomeEmailTemplate(name),
     });
     console.log('Welcome email sent to %s | id: %s', to, welcomeInfo.messageId);
