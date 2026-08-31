@@ -11,9 +11,27 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// Main route for testing
+// Main route for testing - with Vercel Web Analytics script
 app.get('/', (req, res) => {
-  res.send('Oh Curio! Backend is running');
+  // Serve HTML response with Vercel Web Analytics script injected
+  res.send(`
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Oh Curio! Backend</title>
+      <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+      </script>
+      <script defer src="/_vercel/insights/script.js"></script>
+    </head>
+    <body>
+      <h1>Oh Curio! Backend is running</h1>
+      <p>Vercel Web Analytics is enabled for this deployment.</p>
+    </body>
+    </html>
+  `);
 });
 
 // API Routes
